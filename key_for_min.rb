@@ -5,10 +5,10 @@ def key_for_min_value(name_hash)
   
   overall_lowest_price = 0
   overall_lowest_person = ""
-  
   last_price = 0
   last_name = ""
   if name_hash != {}
+    
     name_hash.each do |name, price|
       current_price = price
       current_name = name
@@ -21,7 +21,7 @@ def key_for_min_value(name_hash)
         overall_lowest_person = last_name
         overall_lowest_price = last_price
       
-      elsif last_price == ""
+      elsif last_price == 0
         last_price = current_price
         last_name = current_name
         overall_lowest_person = current_name
@@ -31,6 +31,7 @@ def key_for_min_value(name_hash)
       end
     end
     puts overall_lowest_person
+  
   else
      nil
   end
