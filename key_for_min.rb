@@ -29,7 +29,7 @@ def key_for_min_value(name_hash)
       else
         nil
       end
-    overall_lowest_person
+    putsoverall_lowest_person
     end
   else
      nil
