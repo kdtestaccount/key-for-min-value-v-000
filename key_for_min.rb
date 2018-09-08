@@ -18,7 +18,7 @@ def key_for_min_value(name_hash)
         overall_lowest_price = current_price
       
       elsif current_price > last_price
-        overall_lowest_person = name_hash
+        overall_lowest_person = last_name
         overall_lowest_price = last_price
       
       elsif last_price == ""
